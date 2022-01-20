@@ -11,9 +11,6 @@ IP_YOULESS = "http://192.168.178.31/a?f=j"
 IMPULSRATE = 10000
 
 def main():
-
-    impuls = int(open("impuls.txt").read())
-
     # Leistungswert von youless auslesen
     req = requests.get(IP_YOULESS)
     data = req.content

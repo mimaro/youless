@@ -27,6 +27,7 @@ def main():
     #W-LAN einschalten
     sudo ifconfig eth0 up
     
+    
 if __name__ == "__main__":
     main()
 

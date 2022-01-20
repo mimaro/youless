@@ -15,7 +15,7 @@ def main():
     impuls = int(open("impuls.txt").read())
 
     # Leistungswert von youless auslesen
-    req = requests.get("IP_YOULESS)
+    req = requests.get(IP_YOULESS)
     data = req.content
     decoded_data = json.loads(data)
     power = str(("{}".format(decoded_data["pwr"])))

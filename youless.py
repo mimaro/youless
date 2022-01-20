@@ -12,7 +12,7 @@ IMPULSRATE = 10000
 
 def main():
     # W-LAN deaktivieren
-    sudo config eth0 down
+    sudo ifconfig eth0 down
     
     # Leistungswert von youless auslesen
     req = requests.get(IP_YOULESS)
@@ -25,7 +25,7 @@ def main():
     print(impuls)
 
     #W-LAN einschalten
-    sudo config eth0 up
+    sudo ifconfig eth0 up
     
 if __name__ == "__main__":
     main()

@@ -11,6 +11,9 @@ IP_YOULESS = "http://192.168.178.31/a?f=j"
 IMPULSRATE = 10000
 
 def main():
+    # W-LAN deaktivieren
+    sudo config eth0 down
+    
     # Leistungswert von youless auslesen
     req = requests.get(IP_YOULESS)
     data = req.content
@@ -21,6 +24,9 @@ def main():
     print(power_corr)
     print(impuls)
 
+    #W-LAN einschalten
+    sudo config eth0 up
+    
 if __name__ == "__main__":
     main()
 

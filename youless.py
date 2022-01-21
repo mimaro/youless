@@ -19,6 +19,9 @@ def write_vals(uuid,val):
     postreq = requests.post(poststring)
 
 def main():
+    logging.basicConfig(level=logging.INFO)
+    logging.info("*****************************")
+    logging.info("*Starting Youless")
     avg_pwr = 0
     
     for i in range (5): 
@@ -41,8 +44,10 @@ def main():
     print(power_corr)
     
     avg_pwr = avg_pwr/6
+    logging.info("Average Power = {avg_pwr} ")
     write_vals(UUID["Power"],avg_pwr)
     print(avg_pwr)
+    logging.info("Reading to vz done")
     
 if __name__ == "__main__":
     main()

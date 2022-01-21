@@ -6,7 +6,7 @@ import json
 import logging
 import time
 
-VZ_POST_URL = "http://vz.wiuhelmtell.ch/middleware.php/data/{}json?operation=add&value={}"
+VZ_POST_URL = "http://vz.wiuhelmtell.ch/middleware.php/data/{}.json?operation=add&value={}"
 UUID = {
     "Power": "ad5c8090-3698-11ea-8ad7-7f796afef9a1"
 }

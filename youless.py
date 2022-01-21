@@ -36,7 +36,7 @@ def main():
     data = req.content
     decoded_data = json.loads(data)
     power = str(("{}".format(decoded_data["pwr"])))
-    power_corr = int(float(power) / impuls * IMPULSRATE)
+    power_corr = int(float(power) / 1000 * IMPULSRATE)
     avg_pwr += power_corr
     print(power_corr)
     

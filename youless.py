@@ -14,12 +14,13 @@ UUID = {
 IP_YOULESS = "http://156.154.187.10/a?f=j"
 IMPULSRATE = 1000
 
+logging.basicConfig(level=logging.INFO)
+
 def write_vals(uuid,val):
     poststring = VZ_POST_URL.format(uuid,val)
     postreq = requests.post(poststring)
 
 def main():
-    #logging.basicConfig(level=logging.INFO)
     logging.info("*****************************")
     logging.info("*Starting Youless")
     avg_pwr = 0

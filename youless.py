@@ -19,7 +19,7 @@ def write_vals(uuid,val):
     postreq = requests.post(poststring)
 
 def main():
-    logging.basicConfig(level=logging.INFO)
+    #logging.basicConfig(level=logging.INFO)
     logging.info("*****************************")
     logging.info("*Starting Youless")
     avg_pwr = 0

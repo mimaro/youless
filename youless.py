@@ -9,7 +9,8 @@ import time
 VZ_POST_URL = "http://vz.wiuhelmtell.ch/middleware.php/data/{}json?operation=add&value={}"
 UUID = {
     "Power": "ad5c8090-3698-11ea-8ad7-7f796afef9a1"
-    {
+}
+
 IP_YOULESS = "http://156.154.187.10/a?f=j"
 IMPULSRATE = 1000
 

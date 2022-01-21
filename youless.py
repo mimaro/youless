@@ -32,13 +32,13 @@ def main():
         print(power_corr)
         time.sleep(10)
 
-    req = requests.get(IP_YOULESS)
-    data = req.content
-    decoded_data = json.loads(data)
-    power = str(("{}".format(decoded_data["pwr"])))
-    power_corr = str(float(power) / impuls * IMPULSRATE)
-    avg_pwr += power_corr
-    print(power_corr)
+#     req = requests.get(IP_YOULESS)
+#     data = req.content
+#     decoded_data = json.loads(data)
+#     power = str(("{}".format(decoded_data["pwr"])))
+#     power_corr = str(float(power) / impuls * IMPULSRATE)
+#     avg_pwr += power_corr
+#     print(power_corr)
     
     avg_pwr = avg_pwr/6
     write_vals(UUID["Power"],avg_pwr)

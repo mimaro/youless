@@ -43,10 +43,8 @@ def main():
     avg_pwr += power_corr
     print(power_corr)
     
-    avg_pwr = avg_pwr/6
-    logging.info("Average Power = {avg_pwr} ")
-    
-    logging.info("Average Power ({} W).format(avg_pwr))
+    avg_pwr = avg_pwr/6    
+    logging.info("Average Power: {} W".format(avg_pwr))
     write_vals(UUID["Power"],avg_pwr)
     print(avg_pwr)
     logging.info("Reading to vz done")
